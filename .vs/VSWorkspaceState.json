@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\FrontendDesktop"
+    "\\FrontendDesktop",
+    "\\FrontendDesktop\\img",
+    "\\FrontendDesktop\\Properties"
   ],
-  "SelectedNode": "\\FrontendDesktop\\Form1.cs",
+  "SelectedNode": "\\FrontendDesktop\\FrontendDesktop.csproj",
   "PreviewInSolutionExplorer": false
 }
