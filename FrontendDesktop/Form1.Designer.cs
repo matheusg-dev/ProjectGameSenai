@@ -31,12 +31,12 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pb_solo = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pb_duo = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tm_solo = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pb_solo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_duo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
@@ -46,7 +46,7 @@
             this.pb_solo.Image = ((System.Drawing.Image)(resources.GetObject("pb_solo.Image")));
             this.pb_solo.Location = new System.Drawing.Point(548, 85);
             this.pb_solo.Name = "pb_solo";
-            this.pb_solo.Size = new System.Drawing.Size(150, 64);
+            this.pb_solo.Size = new System.Drawing.Size(150, 73);
             this.pb_solo.TabIndex = 4;
             this.pb_solo.TabStop = false;
             this.pb_solo.Click += new System.EventHandler(this.tra);
@@ -54,15 +54,17 @@
             this.pb_solo.MouseEnter += new System.EventHandler(this.pb_solo_MouseEnter);
             this.pb_solo.MouseLeave += new System.EventHandler(this.pb_solo_MouseLeave);
             // 
-            // pictureBox2
+            // pb_duo
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(548, 178);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(150, 64);
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.MouseEnter += new System.EventHandler(this.pictureBox2_MouseEnter);
+            this.pb_duo.Image = ((System.Drawing.Image)(resources.GetObject("pb_duo.Image")));
+            this.pb_duo.Location = new System.Drawing.Point(548, 178);
+            this.pb_duo.Name = "pb_duo";
+            this.pb_duo.Size = new System.Drawing.Size(150, 64);
+            this.pb_duo.TabIndex = 5;
+            this.pb_duo.TabStop = false;
+            this.pb_duo.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pb_duo_MouseClick);
+            this.pb_duo.MouseEnter += new System.EventHandler(this.pb_duo_MouseEnter);
+            this.pb_duo.MouseLeave += new System.EventHandler(this.pb_duo_MouseLeave);
             // 
             // pictureBox3
             // 
@@ -95,12 +97,12 @@
             this.ClientSize = new System.Drawing.Size(925, 456);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pb_duo);
             this.Controls.Add(this.pb_solo);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pb_solo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_duo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
@@ -109,7 +111,7 @@
 
         #endregion
         private PictureBox pb_solo;
-        private PictureBox pictureBox2;
+        private PictureBox pb_duo;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
         private System.Windows.Forms.Timer tm_solo;

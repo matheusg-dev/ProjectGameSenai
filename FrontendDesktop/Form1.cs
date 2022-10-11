@@ -8,30 +8,49 @@ namespace FrontendDesktop
         }
         private void pb_solo_MouseClick(object sender, MouseEventArgs e)
         {
-
+            pb_solo.Image = Image.FromFile(@"E:\ProjetoPongII\FrontendDesktop\img\solopress2.jpg");
         }
 
 
 
         private void pb_solo_MouseEnter(object sender, EventArgs e)
         {
-            tm_solo.Start();
+            pb_solo.Image = Image.FromFile(@"E:\ProjetoPongII\FrontendDesktop\img\soloup2.jpg");
         }
 
         private void pb_solo_MouseLeave(object sender, EventArgs e)
         {
-            tm_solo.Stop();
+            pb_solo.Image = Image.FromFile(@"E:\ProjetoPongII\FrontendDesktop\img\solofix2.jpg");
         }
 
         private void tm_solo_Tick(object sender, EventArgs e)
         {
-            MessageBox.Show("Foi garaio");
-            tm_solo.Stop();
+
         }
 
         private void tra(object sender, EventArgs e)
         {
 
+        }
+
+        private void pb_duo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pb_duo_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void pb_duo_MouseEnter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pb_duo_MouseLeave(object sender, EventArgs e)
+        {
+            pb_solo.Image = Image.FromFile(@"E:\ProjetoPongII\FrontendDesktop\img\duofix.jpg");
         }
     }
 }
