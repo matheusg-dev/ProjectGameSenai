@@ -43,6 +43,7 @@
             // 
             // pb_solo
             // 
+            this.pb_solo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pb_solo.Image = ((System.Drawing.Image)(resources.GetObject("pb_solo.Image")));
             this.pb_solo.Location = new System.Drawing.Point(548, 85);
             this.pb_solo.Name = "pb_solo";
@@ -55,6 +56,7 @@
             // 
             // pb_duo
             // 
+            this.pb_duo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pb_duo.Image = ((System.Drawing.Image)(resources.GetObject("pb_duo.Image")));
             this.pb_duo.Location = new System.Drawing.Point(548, 178);
             this.pb_duo.Name = "pb_duo";
@@ -67,6 +69,7 @@
             // 
             // pb_placar
             // 
+            this.pb_placar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pb_placar.Image = global::FrontendDesktop.Properties.Resources.placar_fix_2;
             this.pb_placar.Location = new System.Drawing.Point(548, 271);
             this.pb_placar.Name = "pb_placar";
@@ -79,6 +82,7 @@
             // 
             // pb_cores
             // 
+            this.pb_cores.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pb_cores.Image = global::FrontendDesktop.Properties.Resources.cores_fix_2;
             this.pb_cores.Location = new System.Drawing.Point(548, 363);
             this.pb_cores.Name = "pb_cores";
