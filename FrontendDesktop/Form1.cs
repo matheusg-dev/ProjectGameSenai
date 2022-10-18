@@ -10,16 +10,16 @@ namespace FrontendDesktop
         // picture box solo
         private void pb_solo_MouseClick(object sender, MouseEventArgs e)
         {
-            pb_solo.Image = Image.FromFile(@"E:\ProjetoPongII\FrontendDesktop\img\solopress2.jpg");
+            pb_solo.Image = Image.FromFile(@"img\solopress2.jpg");
         }
         private void pb_solo_MouseEnter(object sender, EventArgs e)
         {
-            pb_solo.Image = Image.FromFile(@"E:\ProjetoPongII\FrontendDesktop\img\soloup2.jpg");
+            pb_solo.Image = Image.FromFile(@"img\soloup2.jpg");
         }
 
         private void pb_solo_MouseLeave(object sender, EventArgs e)
         {
-            pb_solo.Image = Image.FromFile(@"E:\ProjetoPongII\FrontendDesktop\img\solofix2.jpg");
+            pb_solo.Image = Image.FromFile(@"img\solofix2.jpg");
         }
 
         private void tm_solo_Tick(object sender, EventArgs e)
@@ -30,50 +30,50 @@ namespace FrontendDesktop
         // picture box duo
         private void pb_duo_MouseClick(object sender, MouseEventArgs e)
         {
-            pb_duo.Image = Image.FromFile(@"E:\ProjetoPongII\FrontendDesktop\img\duopress.jpg");
+            pb_duo.Image = Image.FromFile(@"img\duopress.jpg");
         }
 
         private void pb_duo_MouseEnter(object sender, EventArgs e)
         {
-            pb_duo.Image = Image.FromFile(@"E:\ProjetoPongII\FrontendDesktop\img\duoup.jpg");
+            pb_duo.Image = Image.FromFile(@"img\duoup.jpg");
         }
 
         private void pb_duo_MouseLeave(object sender, EventArgs e)
         {
-            pb_duo.Image = Image.FromFile(@"E:\ProjetoPongII\FrontendDesktop\img\duofix.jpg");
+            pb_duo.Image = Image.FromFile(@"img\duofix.jpg");
         }
 
         // picture box placar
         private void pb_placar_MouseClick(object sender, MouseEventArgs e)
         {
-            pb_placar.Image = Image.FromFile(@"E:\ProjetoPongII\FrontendDesktop\img\placarpress.jpg");
+            pb_placar.Image = Image.FromFile(@"img\placarpress.jpg");
 
         }
 
         private void pb_placar_MouseEnter(object sender, EventArgs e)
         {
-            pb_placar.Image = Image.FromFile(@"E:\ProjetoPongII\FrontendDesktop\img\placarup.jpg");
+            pb_placar.Image = Image.FromFile(@"img\placarup.jpg");
         }
 
         private void pb_placar_MouseLeave(object sender, EventArgs e)
         {
-            pb_placar.Image = Image.FromFile(@"E:\ProjetoPongII\FrontendDesktop\img\placarfix.jpg");
+            pb_placar.Image = Image.FromFile(@"img\placarfix.jpg");
         }
 
         //picture box cores
         private void pb_cores_MouseClick(object sender, MouseEventArgs e)
         {
-            pb_cores.Image = Image.FromFile(@"E:\ProjetoPongII\FrontendDesktop\img\corespress.jpg");
+            pb_cores.Image = Image.FromFile(@"img\corespress.jpg");
         }
 
         private void pb_cores_MouseEnter(object sender, EventArgs e)
         {
-            pb_cores.Image = Image.FromFile(@"E:\ProjetoPongII\FrontendDesktop\img\coresup.jpg");
+            pb_cores.Image = Image.FromFile(@"img\coresup.jpg");
         }
 
         private void pb_cores_MouseLeave(object sender, EventArgs e)
         {
-            pb_cores.Image = Image.FromFile(@"E:\ProjetoPongII\FrontendDesktop\img\coresfix.jpg");
+            pb_cores.Image = Image.FromFile(@"img\coresfix.jpg");
         }
     }
 }
