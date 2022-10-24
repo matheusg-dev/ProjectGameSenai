@@ -50,6 +50,7 @@
             this.pb_solo.Size = new System.Drawing.Size(150, 73);
             this.pb_solo.TabIndex = 4;
             this.pb_solo.TabStop = false;
+            this.pb_solo.Click += new System.EventHandler(this.pb_solo_Click);
             this.pb_solo.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pb_solo_MouseClick);
             this.pb_solo.MouseEnter += new System.EventHandler(this.pb_solo_MouseEnter);
             this.pb_solo.MouseLeave += new System.EventHandler(this.pb_solo_MouseLeave);
