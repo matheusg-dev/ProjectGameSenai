@@ -87,7 +87,7 @@
             this.pb_cores.Image = global::FrontendDesktop.Properties.Resources.cores_fix_2;
             this.pb_cores.Location = new System.Drawing.Point(548, 363);
             this.pb_cores.Name = "pb_cores";
-            this.pb_cores.Size = new System.Drawing.Size(150, 73);
+            this.pb_cores.Size = new System.Drawing.Size(150, 80);
             this.pb_cores.TabIndex = 7;
             this.pb_cores.TabStop = false;
             this.pb_cores.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pb_cores_MouseClick);

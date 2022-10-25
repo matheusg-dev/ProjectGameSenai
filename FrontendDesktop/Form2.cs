@@ -12,30 +12,44 @@ namespace FrontendDesktop
 {
     public partial class Form2 : Form
     {
+        Random rand = new Random();
         Bitmap bmp = null;
         Graphics g = null;
         World world = new World();
+
+        ParticleBar b1;
+        ParticleBar b2;
+        ParticleBall p1;
+
         public Form2()
         {
             InitializeComponent();
-            ParticleBall p1 = new ParticleBall
+            p1 = new ParticleBall
             {
                 Mass = 80,
                 PositionX = 150,
-                PositionY = pictureBox1.Height,
+                PositionY = 500,
                 DX = 400,
                 DY = 500
             };
             world.Balls.Add(p1);
 
-            ParticleBar b1 = new ParticleBar
+            b1 = new ParticleBar
             {
-                Width = 15,
-                Height = 100,
-                PositionX = 250,
-                PositionY = pictureBox1.Height / 2,
+                Width = 13,
+                Height = 150,
+                PositionX = 50,
+                PositionY = pictureBox1.Height
             };
             world.Bars.Add(b1);
+            b2 = new ParticleBar
+            {   
+                Width = 13,
+                Height = 150,
+                PositionX = pictureBox1.Width * 2 + 265,
+                PositionY = pictureBox1.Height
+            };
+            world.Bars.Add(b2);
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -58,6 +72,9 @@ namespace FrontendDesktop
         {
             g.Clear(Color.White);
 
+            b1.PositionY = p1.PositionY - p1.Mass / 2;
+            b2.PositionY = p1.PositionY - p1.Mass / 2;
+
             world.Draw(g);
             world.DrawRectangle(g);
             pictureBox1.Refresh();
@@ -66,13 +83,25 @@ namespace FrontendDesktop
             {
                 if (et.PositionX > (pictureBox1.Right - (et.Mass / 2)))
                 {
-                    et.DX *= -1;
+                    //GOL
+                    et.PositionX = pictureBox1.Width / 2;
+                    et.PositionY = pictureBox1.Height / 2;
+                    double theta = 45 + rand.NextDouble() * 90;
+                    double randian = Math.PI * theta / 180;
+                    et.DX = 600 * Math.Sin(randian);
+                    et.DY = 600 * Math.Cos(randian);
                 }
-
                 if (et.PositionX < (pictureBox1.Left + (et.Mass / 2)))
                 {
-                    et.DX *= -1;
+                    //GOL
+                    et.PositionX = pictureBox1.Width / 2;
+                    et.PositionY = pictureBox1.Height / 2;
+                    double theta = 45 + rand.NextDouble() * 90;
+                    double randian = Math.PI * theta / 180;
+                    et.DX = -600 * Math.Sin(randian);
+                    et.DY = -600 * Math.Cos(randian);
                 }
+
                 if (et.PositionY > (pictureBox1.Top + (et.Mass / 2)))
                 {
                     et.DY *= -1;
@@ -80,6 +109,22 @@ namespace FrontendDesktop
                 if (et.PositionY < (pictureBox1.Bottom - (et.Mass / 2)))
                 {
                     et.DY *= -1;
+                }
+
+                if (et.PositionX + et.Mass / 2 > b2.PositionX)
+                {
+                    bool c1 = et.PositionY - et.Mass / 2 < b2.PositionY + b2.Height;
+                    bool c2 = et.PositionY + et.Mass / 2 > b2.PositionY;
+                    if (c1 && c2)
+                        et.DX *= -1.1;
+                }
+
+                if (et.PositionX - et.Mass / 2 < b1.PositionX)
+                {
+                    bool c1 = et.PositionY - et.Mass / 2 < b1.PositionY + b1.Height;
+                    bool c2 = et.PositionY + et.Mass / 2 > b1.PositionY;
+                    if (c1 && c2)
+                        et.DX *= -1.1;
                 }
             }
         }
