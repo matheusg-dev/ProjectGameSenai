@@ -64,8 +64,7 @@ namespace FrontendDesktop
         private void pb_cores_MouseClick(object sender, MouseEventArgs e)
         {
             pb_cores.Image = Image.FromFile(@"img\corespress.jpg");
-            Form2 frm = new Form2();
-            frm.ShowDialog();
+            
         }
 
         private void pb_cores_MouseEnter(object sender, EventArgs e)
@@ -80,7 +79,8 @@ namespace FrontendDesktop
 
         private void pb_solo_Click(object sender, EventArgs e)
         {
-          
-        }
+            Form2 frm = new Form2();
+            frm.ShowDialog();
+       }
     }
 }

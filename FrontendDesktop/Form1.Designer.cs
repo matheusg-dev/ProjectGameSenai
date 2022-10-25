@@ -109,8 +109,10 @@
             this.Controls.Add(this.pb_placar);
             this.Controls.Add(this.pb_duo);
             this.Controls.Add(this.pb_solo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.pb_solo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_duo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_placar)).EndInit();
